@@ -1,7 +1,7 @@
 while True:
     middleControl = 0
     i = 0
-    gs = list(input('Sayı giriniz: '))
+    gs = list(input('Enter a number: '))
     r = list(reversed(gs))
     intgs = int(len(gs))
     if gs == r:
@@ -13,8 +13,8 @@ while True:
                 middleControl = 1
                 break
         if middleControl == 1:
-            print("Bu bir ayna sayıdır.")
+            print("this is mirror number.")
         else:
-            print("Bu bir ayna sayı değildir.")
+            print("this is not mirror number.")
     elif gs != r:
-        print("Bu bir ayna sayı değildir.")
+        print("this is not mirror number")
