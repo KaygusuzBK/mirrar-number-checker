@@ -1,20 +1,20 @@
 while True:
-    middleControl = 0
+    isSameNumber = 0
     i = 0
-    gs = list(input('Enter a number: '))
-    r = list(reversed(gs))
-    intgs = int(len(gs))
-    if gs == r:
-        while(i < len(gs)):
-            if i != len(gs) and gs[0] == gs[i]:
+    enteredNumber = list(input('Enter a number: '))
+    reversedEnteredNumber = list(reversed(enteredNumber))
+    intenteredNumber = int(len(enteredNumber))
+    if enteredNumber == reversedEnteredNumber:
+        while(i < len(enteredNumber)):
+            if i != len(enteredNumber) and enteredNumber[0] == enteredNumber[i]:
                 i = i + 1
-                middleControl = 0
+                isSameNumber = 0
             else:
-                middleControl = 1
+                isSameNumber = 1
                 break
-        if middleControl == 1:
+        if isSameNumber == 1:
             print("this is mirror number.")
         else:
             print("this is not mirror number.")
-    elif gs != r:
+    elif enteredNumber != reversedEnteredNumber:
         print("this is not mirror number")
