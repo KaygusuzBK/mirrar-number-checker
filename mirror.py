@@ -1,7 +1,8 @@
+import text
 while True:
     isSameNumber = 0
     i = 0
-    enteredNumber = input("Enter a number: ")
+    enteredNumber = input(text.ask)
     if enteredNumber.strip().isdigit() and False:
         listEnteredNumber = list(str(enteredNumber))
         reversedlistEnteredNumber = list(reversed(listEnteredNumber))
@@ -15,10 +16,10 @@ while True:
                     isSameNumber = 1
                     break
             if isSameNumber == 1:
-                print("This is mirror number.")
+                print(text.succesfull)
             else:
-                print("This is not mirror number.")
+                print(text.error)
         elif listEnteredNumber != reversedlistEnteredNumber:
-            print("This is not mirror number")
+            print(text.error)
     else:
-            print('Please enter a valid number')
+            print(text.valid)
