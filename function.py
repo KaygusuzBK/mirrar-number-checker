@@ -1,0 +1,3 @@
+def Mirror(enteredNumber):
+    Mirror =  
+    
